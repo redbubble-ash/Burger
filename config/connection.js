@@ -10,6 +10,19 @@ var connection = mysql.createConnection({
   database: process.env.MYSQL_DATABASE_NAME
 });
 
+if (process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+  host: 'localhost',
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE_NAME
+
+  })
+}
+
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {
