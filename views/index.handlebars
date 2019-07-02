@@ -3,11 +3,12 @@
         <div class="col">
 
             <h2>Burgers to devour!</h2>
-            {{#each burgers}}
-            {{#unless devoured}}
-            {{> burgers/burger-block devour=true}}
-            {{/unless}}
-            {{/each}}
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devour=true}}
+                {{/unless}}
+                {{/each}}
             </ul>
 
 
@@ -24,10 +25,12 @@
         </div>
         <div class="col">
             <h2>Burgers are devoured!</h2>
-            {{#each burgers}}
-            {{#if devoured}}
-            {{/if}}
-            {{/each}}
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devour=false}}
+                {{/if}}
+                {{/each}}
             </ul>
 
 
