@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(".create-form").on("submit", function (event) {
+    $("#create-newBurger").on("click", function (event) {
 
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
@@ -8,7 +8,7 @@ $(document).ready(function () {
         var newBurger = {
 
             burger_name: $("#newBurger").val().trim(),
-            devoured: false
+            devoured: 0
 
         }
 
@@ -23,8 +23,6 @@ $(document).ready(function () {
                 location.reload();
             }
         );
-
-
 
     })
 
