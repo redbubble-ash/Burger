@@ -21,8 +21,8 @@ li{
 
 p{
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: darkgreen;
+    color: darkturquoise;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 
 }
