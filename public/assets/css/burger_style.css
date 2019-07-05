@@ -22,7 +22,7 @@ li{
 p{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: azure;
+    color: darkgreen;
 
 
 }
@@ -36,4 +36,8 @@ p{
 
 .change-devour {
     border-radius: 12px;
+}
+
+.container {
+    margin-top: 5%;
 }
