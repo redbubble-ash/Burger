@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
-    $("#create-newBurger").on("click", function (event) {
-
-        // Make sure to preventDefault on a submit event.
-        event.preventDefault();
+    var submitNewBurger = function (event) {
 
         var newBurger = {
 
@@ -24,8 +21,17 @@ $(document).ready(function () {
             }
         );
 
-    })
+    }
 
+    $("#create-newBurger").on("click", submitNewBurger)
+
+    $("#newBurger").on("keypress", function (event) {
+        if (event.key === "Enter") {
+            submitNewBurger();
+            console.log("test keypress")
+        }
+
+    })
 
     $(".change-devour").on("click", function (event) {
         var id = $(this).data("id");
