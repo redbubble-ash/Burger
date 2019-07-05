@@ -1,0 +1,39 @@
+body {
+    background-image: url(../img/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1,h2 {
+    font-family: 'Gochi Hand', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    color: yellow
+
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    color: white;
+
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: azure;
+
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.change-devour {
+    border-radius: 12px;
+}
